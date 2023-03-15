@@ -6,59 +6,37 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_view1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="View 1" />
 
     <TextView
-        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View 2"/>
+        android:layout_above="@+id/text_view1"
+        android:layout_toStartOf="@+id/text_view1"
+        android:text="View 2" />
 
     <TextView
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View 3"/>
+        android:layout_below="@id/text_view1"
+        android:layout_toStartOf="@+id/text_view1"
+        android:text="View 3" />
 
     <TextView
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View 4"/>
+        android:layout_below="@id/text_view1"
+        android:layout_toEndOf="@+id/text_view1"
+        android:text="View 4" />
 
     <TextView
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View 5"/>
-
-    <TextView
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 6"/>
-
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 7"/>
-
-    <TextView
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 8"/>
-
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View 9"/>
+        android:layout_above="@+id/text_view1"
+        android:layout_toEndOf="@+id/text_view1"
+        android:text="View 5" />
 </RelativeLayout>
