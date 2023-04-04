@@ -6,37 +6,55 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/red"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="View 1" />
+        android:text="Red" />
 
     <TextView
+        android:id="@+id/green"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/text_view1"
-        android:layout_toStartOf="@+id/text_view1"
-        android:text="View 2" />
+        android:layout_below="@+id/red"
+        android:layout_alignStart="@+id/red"
+        android:layout_centerInParent="true"
+        android:text="Green" />
 
     <TextView
+        android:id="@+id/blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view1"
-        android:layout_toStartOf="@+id/text_view1"
-        android:text="View 3" />
+        android:layout_below="@+id/green"
+        android:layout_alignStart="@+id/red"
+        android:layout_centerInParent="true"
+        android:text="Blue" />
 
     <TextView
+        android:id="@+id/orange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view1"
-        android:layout_toEndOf="@+id/text_view1"
-        android:text="View 4" />
+        android:layout_below="@+id/blue"
+        android:layout_alignStart="@+id/red"
+        android:layout_centerInParent="true"
+        android:text="Orange" />
 
     <TextView
+        android:id="@+id/gray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/text_view1"
-        android:layout_toEndOf="@+id/text_view1"
-        android:text="View 5" />
+        android:layout_below="@+id/orange"
+        android:layout_alignStart="@+id/red"
+        android:layout_centerInParent="true"
+        android:text="Gray" />
+
+    <TextView
+        android:id="@+id/pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gray"
+        android:layout_alignStart="@+id/red"
+        android:layout_centerInParent="true"
+        android:text="Pink" />
+
 </RelativeLayout>
